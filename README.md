@@ -21,9 +21,9 @@ A target specifies a product to build and contains the instructions for building
 ![enter image description here](https://raw.githubusercontent.com/CoderGiaJiang/Multiple-Target/master/TargetDemo/Resource/1.png)
 
 2. 修改 **Target** 名称
-	1 ） 点击 **Xcode** 左上角 **Run**、**Stop** 右边的工程名称，下拉框中选择 **Manage Schemes**，在弹出框中，点击 **TargetDemo copy** 那行， 点击一次，再点击一次，并修改名字。
-	2）选中项目，在 **Target** 列表上面点击 **TargetDemo copy**， 点击一次，再点击一次，并修改名字
-	3 ）修改 **info.plist** 的命名。
+	- 点击 **Xcode** 左上角 **Run**、**Stop** 右边的工程名称，下拉框中选择 **Manage Schemes**，在弹出框中，点击 **TargetDemo copy** 那行， 点击一次，再点击一次，并修改名字。
+	- 选中项目，在 **Target** 列表上面点击 **TargetDemo copy**， 点击一次，再点击一次，并修改名字
+	- 修改 **info.plist** 的命名。
 3. 将 **info.plist** 添加到 **Target** 中
 	在项目中新建 **Group** 并创建文件夹，删除 **TargetDemo copy-info.plist** 索引，然后拷贝文件到指定目录中，然后更名为 **TargetDemoCopy-info.plist**，再添加到 **Target** 中。
 ![Alt text](https://raw.githubusercontent.com/CoderGiaJiang/Multiple-Target/master/TargetDemo/Resource/2.png)		
@@ -35,9 +35,9 @@ A target specifies a product to build and contains the instructions for building
 	**Target** -> **Build Setting** 搜索 **Preprocessor Macros** 设置 **Debug** 和 **Release** 里的预编译宏内容 
 7. 多个 Target 中不同文件的处理（图标、较大 UI 界面改动）
 	**Target** -> **Build Phases** 各个 **Target** 编译所包含的内容
-	1）**Compile Sources** 需要编译的代码文件
-	2）**Link Binary With Libraries** 编译所依赖的库
-	3）**Copy Bundle Resources** 编译需要的资源
+	- **Compile Sources** 需要编译的代码文件
+	- **Link Binary With Libraries** 编译所依赖的库
+	- **Copy Bundle Resources** 编译需要的资源
 	
 每个 **Target** 可以根据具体需要增减里面的内容，选择对应的文件。适用于一些图标的改变，好处是代码逻辑可以不用动，名称都统一，只是添加了不同的文件。
   8. 最后，选择不同的 **Target** 运行程序就可以看到不同的效果。
